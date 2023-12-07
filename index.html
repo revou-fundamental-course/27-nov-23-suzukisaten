@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <h1>
+            <p></p>
+        </h1>
+    </div>
+    <div class="judul_rumusluas">
+        <h1 class="rks">Rumus Luas Segitiga</h1>
+        <div class="potols">
+            <img src="LuasSegitiga.png" width="140px">
+        </div>
+        <form method="get">
+            <div class="inputhitung">
+                <h2>Hitung Luas Segitiga</h2>
+                <div class="kolom">
+                    <input type="number" placeholder="nilai Alas" required id="alas" name="alas"><br>
+
+                    <input type="number" placeholder="nilai Tinggi" required id="tinggi" name="tinggi">
+                </div>
+                <p class="hasilluas">hasil luas segitiganya yaitu: <span id="luas"></span></p>
+                <div class="slebew">
+                    <p id="errormessage" hidden></p>
+                </div>
+               <input type="button" value="hitung" onclick="hitungluas()">
+            </div>
+        </form>
+        <script type="text/javascript" src="js/script.js"></script>
+    </div>
+    <div class="judul_rumuskeliling">
+        <h1 class="rks">Rumus Keliling Segitiga</h1>
+        <div class="potok">
+            <img src="kelilingsegitiga.jpg" width="200px">
+        </div>
+        <form>
+            <div class="inputhitung">
+                <table>
+                    <h2>Hitung Keliling Segitiga</h2>
+                    <div class="kolom">
+                        <input type="number" placeholder="sisi1" required id="sisi1" name="sisi1"><br>
+                        <input type="number" placeholder="sisi2" required id="sisi2" name="sisi2"><br>
+                        <input type="number" placeholder="sisi3" required id="sisi3" name="sisi3"><br>
+                    </div>
+                    <p>Hasil keliling segitiganya yaitu: <span id="keliling"></span></p>
+                    <input type="button" value="hitung" onclick="hitungkeliling()">
+                </table>
+            </div>
+        </form>
+        <script type="text/javascript" src="js/script.js"></script>
+
+    </div>
+</body>
+
+</html>
